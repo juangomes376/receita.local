@@ -31,3 +31,12 @@ L'application devra permettre de lister les recettes, et de faire des recherches
 
 # .env
 
+
+
+
+
+
+
+# droit
+
+logo -- https://br.freepik.com/
