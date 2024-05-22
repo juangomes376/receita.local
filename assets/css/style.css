@@ -63,3 +63,39 @@
 }
 
 /*  */
+
+
+/* header */
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header details{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+header summary{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+header summary img{
+    height: 30px; 
+    width: 30px;
+}
+
+
+/*  */

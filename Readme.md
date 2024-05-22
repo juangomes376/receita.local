@@ -27,6 +27,11 @@ L'application devra permettre de lister les recettes, et de faire des recherches
 <br/>Un mode administrateur permettra de créer et d'éditer l'ensemble de ces entités,
 
 
+# 
+
+    1. sign in 
+    2. sign out
+    
 
 
 # .env

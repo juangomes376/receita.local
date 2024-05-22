@@ -17,6 +17,8 @@
         <input type="submit" value="login">
 
     </form>
+    <a href="/assets/pages/newcompte"> Create Compte </a>
+    <a href="/assets/pages/"> mode pass oublie </a>
 </main>
 <?php require $_SERVER['DOCUMENT_ROOT'] . "/assets/components/footer.php"  ?>
 </body>

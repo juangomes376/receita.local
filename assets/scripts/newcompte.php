@@ -16,6 +16,21 @@ $requete->execute([
     $prenom
 ]);
 
+// $to = "destinatario@exemplo.com";
+// $subject = "Assunto do Email";
+// $message = '
+
+// Este é o conteúdo do email.
+
+
+
+// ';
+// $headers = "From: remetente@exemplo.com" . "\r\n" .
+//            "Reply-To: remetente@exemplo.com" . "\r\n" .
+//            "X-Mailer: PHP/" . phpversion();
+
+// mail($to, $subject, $message, $headers);
+
 
 
 header('Location: /');

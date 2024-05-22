@@ -1,5 +1,9 @@
 <?php
 
+if (!isset($_SESSION)) {
+    session_start();
+}
+
 require $_SERVER['DOCUMENT_ROOT'] .'/assets/sql/connexion.php';
 
 $email = $_POST["email"];
@@ -12,14 +16,25 @@ $requete->execute([
 ]);
 $user = $requete->fetch();
 
+$id = $user["id"];
+$prenom = $user["prenom"];
+$nom = $user["nom"];
+$email = $user["email"];
+
 $hashSenhaArmazenada = $user["password"];
 
 if(password_verify($password, $hashSenhaArmazenada)){
 
-    echo("voce esta certo");
+    // error_log("Login:   voce esta certo");
 
+    $_SESSION['id'] = $id;
+    $_SESSION['prenom'] = $prenom;
+    $_SESSION['nom'] = $nom;
+    $_SESSION['email'] = $email;
 
+    header('Location: /');
 }else{
-    echo("voce esta errado");
+    // error_log("Login: voce esta errado");
+    header('Location: /assets/pages/login');
 }
 ?>
