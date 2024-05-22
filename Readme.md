@@ -32,7 +32,12 @@ L'application devra permettre de lister les recettes, et de faire des recherches
 # .env
 
 
-
+```.env
+    DB_HOST = 
+    DB_NAME = 
+    DB_USER = 
+    DB_PASS = 
+```
 
 
 
