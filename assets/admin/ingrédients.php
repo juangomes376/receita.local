@@ -33,7 +33,7 @@
 
             <div style=" display: flex;">
                 <img src=<?php echo($image)?> style="height: 40px; width: 40px;" >
-                <p><?php echo($nom) ?></p>
+                <p><?php echo("&nbsp;&nbsp;".$nom) ?></p>
             </div>
 
             <?php

@@ -25,12 +25,14 @@ $hashSenhaArmazenada = $user["password"];
 
 if(password_verify($password, $hashSenhaArmazenada)){
 
-    // error_log("Login:   voce esta certo");
+   
 
-    $_SESSION['id'] = $id;
+    $_SESSION['iduser'] = $id;
     $_SESSION['prenom'] = $prenom;
     $_SESSION['nom'] = $nom;
     $_SESSION['email'] = $email;
+
+    error_log("Login:   voce esta certo". $_SESSION['iduser']);
 
     header('Location: /');
 }else{
