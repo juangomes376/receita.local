@@ -30,12 +30,15 @@
             <th>Nom</th>
             <th>Categorie</th>
             <th>Note</th>
+            <th>ingredients</th>
+            <th>Modifier</th>
         </tr>
     <?php
             $requete = $conexion->prepare('SELECT * FROM recettes;');
             $requete->execute();
             $ingredients = $requete->fetchAll();
             foreach($ingredients as $ingredient){
+                $id = $nom = $ingredient["id"];
                 $nom = $ingredient["nom"];
                 $image = $ingredient["image"];
                 $note = $ingredient["note"];
@@ -46,6 +49,8 @@
                     <td><?php echo($nom) ?></td>
                     <td><?php echo($categorie) ?></td>
                     <td><?php echo($note) ?></td>
+                    <td><a href="/assets/admin/addingrédient?id=<?php echo($id) ?>"><img src="/assets/img/list.png" alt="" style="height: 25px; width: 25px;"></a></td> 
+                    <td><a href=""><img src="/assets/img/listedit.png" alt="" style="height: 25px; width: 25px;"></a></td>
                 </tr>
                 <?php
             }
