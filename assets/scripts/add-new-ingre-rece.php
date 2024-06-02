@@ -25,7 +25,7 @@ array_push($json, $novo_ingrediente);
 
 $json = json_encode($json);
 
-//  UPDATE `recettes` SET `ingredients` = '[teste]' WHERE `recettes`.`id` = 5
+// 
 
 
 $requete = $conexion->prepare('UPDATE recettes SET ingredients = ? WHERE id = ?');

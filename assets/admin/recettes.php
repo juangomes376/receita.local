@@ -50,7 +50,7 @@
                     <td><?php echo($categorie) ?></td>
                     <td><?php echo($note) ?></td>
                     <td><a href="/assets/admin/addingrédient?id=<?php echo($id) ?>"><img src="/assets/img/list.png" alt="" style="height: 25px; width: 25px;"></a></td> 
-                    <td><a href=""><img src="/assets/img/listedit.png" alt="" style="height: 25px; width: 25px;"></a></td>
+                    <td><a href="/assets/admin/modifierrecette?id=<?php echo($id) ?>"><img src="/assets/img/listedit.png" alt="" style="height: 25px; width: 25px;"></a></td>
                 </tr>
                 <?php
             }
