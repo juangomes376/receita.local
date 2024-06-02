@@ -11,19 +11,6 @@
                     }
                 ?>
             </div>
-            <?php
-                //   echo(basename($_SERVER['PHP_SELF']));
-                if(basename($_SERVER['PHP_SELF']) == "index.php"){
-                    ?>
-
-                    <div>
-                        <p>moteur</p>
-                    </div>
-
-                    <?php
-                }
-
-            ?>
             <details>
                 <summary style="">
                     <img src="/assets/img/user.png" alt="" style="">

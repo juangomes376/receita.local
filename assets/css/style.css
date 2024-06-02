@@ -6,35 +6,29 @@
     --secondary: black;
 }
 
-/* navbar */
+td{
+    text-align: center;
+}
 
+.page_login{
+    height: 100%;
+    width: 100%;
 
+}
 
-/*  */
+.page_login main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.form_login{
+    display: flex;
+    flex-direction: column;
 
-/* Page login */
-
-
-    .page_login{
-        height: 100%;
-        width: 100%;
-
-    }
-
-    .page_login main{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .form_login{
-        display: flex;
-        flex-direction: column;
-
-    }
+}
 
 /*  */
 
@@ -100,4 +94,21 @@ header summary img{
 }
 
 
-/*  */
+/* index */
+
+.recettes{
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+}
+
+.recettes .recette{
+    display:flex;
+    flex-direction:row;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 10px;
+    text-decoration:none;
+    color: black;
+}
