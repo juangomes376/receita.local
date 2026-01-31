@@ -1,6 +1,6 @@
 .env
 vendor
 logs
-.sql
+*.sql
 vendor/
 logs/
