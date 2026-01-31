@@ -25,15 +25,15 @@ if (isset($_FILES["img"]["name"]) && $_FILES["img"]["tmp_name"] !== "") {
         ]);
         
         // Redireciona para a página desejada após o upload
-        header('Location: /assets/admin/ingrédients');
+        header('Location: /assets/admin/ingredients');
         
 } else {
     echo "Nenhum arquivo foi enviado.";
     // Usando JavaScript para redirecionar após 5 segundos
     echo '<script type="text/javascript">
             setTimeout(function(){
-                window.location.href = "/assets/admin/ingrédients";
+                window.location.href = "/assets/admin/ingredients";
             }, 2000);
-          </script>';
+          </script>'; 
 }
 ?>

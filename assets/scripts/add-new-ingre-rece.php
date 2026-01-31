@@ -35,4 +35,4 @@ $requete->execute([
 ]);
 
 
-header('Location: /assets/admin/addingrédient?id='.$id);
+header('Location: /assets/admin/addingredient?id='.$id);

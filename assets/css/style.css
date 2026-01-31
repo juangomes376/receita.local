@@ -1,14 +1,67 @@
 :root{
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    --primary: white;
-    --secondary: black;
+    /* Color palette */
+    --bg: #F8FAFC; /* gray-50 */
+    --text: #0F172A; /* slate-900 */
+
+    /* Primary (indigo) */
+    --primary-500: #6366F1;
+    --primary-700: #4338CA;
+    --primary-800: #312E81;
+
+    /* Accent (green) */
+    --accent-700: #059669;
+    --accent-800: #065F46;
+
+    /* UI */
+    --surface: #FFFFFF;
+    --muted: #94A3B8;
 }
 
-td{
-    text-align: center;
+/* Base */
+html,body{
+    height: 100%;
+    background: var(--bg); /* gray-50 */
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: var(--text); /* slate-900 */
+    scroll-behavior: smooth;
 }
+
+/* Accessibility helper (visible on focus) */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.sr-only:focus, .sr-only:focus-visible{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}
+
+/* Skip link specific style */
+.skip-link{position:absolute;left:1rem;top:0.5rem;z-index:50;padding:0.25rem 0.5rem;border-radius:6px;background:var(--surface);border:1px solid #E6E6E6;box-shadow:0 6px 18px rgba(2,6,23,0.08);display:none;color:var(--text)}
+.skip-link:focus, .skip-link:focus-visible{display:inline-block}
+
+/* Table */
+th, td{padding:0.5rem;border-bottom:1px solid #E6E6E6;text-align:left}
+
+/* Links */
+a{color:inherit}
+a:hover{color:#0F172A}
+
+/* Link primary utility */
+.link-primary{color:var(--primary-700)}
+.link-primary:hover{color:var(--primary-800)}
+.link-primary:focus-visible{outline:3px solid var(--primary-800);outline-offset:3px}
+/* Focus-visible for controls */
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{outline:3px solid var(--primary-500);outline-offset:3px;box-shadow:0 0 0 3px rgba(99,102,241,0.14);border-radius:6px}
+
+/* Stronger focus for primary buttons */
+.bg-indigo-700:focus-visible{outline:3px solid var(--primary-800);outline-offset:3px;box-shadow:0 0 0 4px rgba(49,46,129,0.18)}
+.bg-green-700:focus-visible{outline:3px solid var(--accent-800);outline-offset:3px;box-shadow:0 0 0 4px rgba(6,95,70,0.14)}
+
+/* Map Tailwind-like classes to palette variables so we can change palette easily */
+.bg-indigo-700{background-color:var(--primary-700) !important}
+.hover\:bg-indigo-800:hover{background-color:var(--primary-800) !important}
+.bg-indigo-800{background-color:var(--primary-800) !important}
+
+.bg-green-700{background-color:var(--accent-700) !important}
+.hover\:bg-green-800:hover{background-color:var(--accent-800) !important}
+/* Center small td text */
+td.center{text-align:center}
+
 
 .page_login{
     height: 100%;
